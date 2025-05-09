@@ -1,10 +1,8 @@
 from pyspark.sql import SparkSession
+from pyspark import SparkContext as sc
 from pyspark.sql.functions import regexp_extract, col
-import sys
-
-# Initialize Spark session
-spark = SparkSession.builder.appName("GenerateImageMetadata").getOrCreate()
-spark.sparkContext.setLogLevel("WARN")  # Reduce log verbosity
+spark = SparkSession.builder.appName("ImageMetadataETL").getOrCreate()
+sc = spark.sparkContext
 
 # Define GCS base path
 BUCKET = "gs://retinopathy_dataset_bucket/RetinopathyDataset"
@@ -46,6 +44,3 @@ for version in VERSIONS:
 
         except Exception as e:
             print(f"Error with {input_path}: {e}", file=sys.stderr)
-
-# Stop Spark session
-spark.stop()
