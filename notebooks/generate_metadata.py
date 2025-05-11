@@ -1,3 +1,4 @@
+# importing libraries and initializing a spark session
 from pyspark.sql import SparkSession
 from pyspark import SparkContext as sc
 from pyspark.sql.functions import regexp_extract, col
