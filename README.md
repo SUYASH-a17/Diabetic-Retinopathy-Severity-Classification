@@ -20,16 +20,3 @@ Academic Project on Diabetic Retinopathy Severity Classification using Pyspark, 
    - (Optional) Vertex AI for batch inference
 
 ---
-
-## 🚀 Quickstart
-
-### Prerequisites
-
-- **GCP Project** with Cloud Storage & Dataproc APIs enabled  
-- Service account JSON key with Storage- and Dataproc-access  
-- Python 3.8+, Java 11, Spark 3.5  
-
-```bash
-git clone https://github.com/your-org/retinopathy-classification.git
-cd retinopathy-classification
-pip install -r requirements.txt
