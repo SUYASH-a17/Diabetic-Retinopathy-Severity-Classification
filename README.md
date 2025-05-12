@@ -16,7 +16,6 @@ Academic Project on Diabetic Retinopathy Severity Classification using Pyspark, 
    - **EfficientNet-B0 CNN** fine-tuning in PyTorch with class-weighted loss.
 5. **Scaling**  
    - GCS for data storage  
-   - Dataproc for distributed Spark jobs  
-   - (Optional) Vertex AI for batch inference
+   - Dataproc for distributed Spark jobs
 
 ---
